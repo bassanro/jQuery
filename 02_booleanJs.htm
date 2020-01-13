@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    
+    var x = 99;
+    x === "99" // false. It compares value and type as well. Since number!= string. 
+
+    var y = null;
+    y == undefined; //true
+    y === undefined // false;
+
+    true == "1" // true
+    true == "12" // false
+    0 == false // true
+    null == undefined // true
+    NaN == NaN // false;
+    
+    // Logic opearator 
+    // &&, || and !   [AND, OR and NOT]
+
+    // Exercise 1 
+    var x = 10;
+    var y ='a'
+
+    y === "b" || x>=10 
+    false || true --> true
+
+    // Exercise 2
+    var x = 3;
+    var y = 8;
+    !(x =="3" || x===y) && !(y !=8 && x<=y)
+    !(true || false) && (false && true)
+    !(true) && !(false)
+    false && true
+    false;
+    
+
+    // Truthy and Falsy values
+    !"Hello World"  //-> false 
+    !""             //-> true
+    !null           //-> true
+    !0              //-> true
+    !-1             //-> false  // [Only 1 is true and rest is false]
+    !NaN            //-> true
+
+
+    // Exercise : 
+    var str = "";
+    var msg = "hahah!"
+    var isFunny = "false"
+
+    !((str || msg) && isFunny) --> 1((false || true) && true) --> !(true && true) -> false
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

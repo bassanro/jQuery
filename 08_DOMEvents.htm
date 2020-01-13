@@ -1,0 +1,56 @@
+<!-- 
+    Events: like clicking, hovering a link, dragging and dropping and pressing any Key
+
+    PROCESS:
+    1) Listen for a click on this <button>
+    2) Listen for a hover event on the <h1>
+    3) Listen for a keypress event on text input. 
+    
+
+    Syntax: 
+    element.addEventListner(type, functionTocall);
+
+    var button = document.querySelector("button");
+    button.addEventListner("click", function() {
+        console.log("SOMEONE CLICKED THE BUTTON");
+    })
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .purple {
+            background: purple;
+        }
+    </style>
+</head>
+<body>
+    <button>CLICK ME</button>
+    <script>
+        var toggle = true;
+        var btn = document.querySelector("button");
+        btn.addEventListener("click", function() {
+            document.body.classList.toggle("purple");
+        })
+
+
+        // btn.addEventListener("click", function() {
+        //     if (toggle)
+        //     {
+        //         document.body.style.backgroundColor = "purple";
+        //     }
+        //     else
+        //     {
+        //         document.body.style.backgroundColor = "white";
+        //     }
+        //     toggle = !toggle;
+        // })
+    </script>
+</body>
+</html>
